@@ -70,7 +70,8 @@ else
     &>/dev/null
 fi
 
-# Play notification sound (background, don't block)
-paplay "$SOUND" &>/dev/null &
+# Play notification sound (detached so it survives hook exit)
+setsid paplay "$SOUND" &>/dev/null &
+disown 2>/dev/null
 
 exit 0
