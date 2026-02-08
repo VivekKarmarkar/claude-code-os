@@ -46,22 +46,6 @@
           }
         ]
       }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/home/vivekkarmarkar/.claude/hooks/sync-plugins.sh"
-          },
-          {
-            "type": "command",
-            "command": "/home/vivekkarmarkar/.claude/hooks/claude-notify.sh",
-            "timeout": 5
-          }
-        ]
-      }
     ]
   },
   "enabledPlugins": {
