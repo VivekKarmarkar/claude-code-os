@@ -57,6 +57,8 @@ if [[ "$FILE_PATH" == *"/.claude/skills/"* ]] || [[ "$FILE_PATH" == *"/.claude/p
     # Copy hooks
     mkdir -p "$REPO_DIR/hooks"
     rsync -a --delete "$HOME/.claude/hooks/" "$REPO_DIR/hooks/"
+    # Sync MCP server configs (redacted)
+    "$HOME/.claude/hooks/sync-mcp.sh"
     # Regenerate README
     "$HOME/.claude/hooks/generate-readme.sh"
     cd "$REPO_DIR"
