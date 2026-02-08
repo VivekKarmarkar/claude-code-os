@@ -79,8 +79,8 @@ for name in $installed_names; do
       fi
     done
     if [ -n "$cache_src" ]; then
-      rsync -a --delete "$cache_src" "$REPO_DIR/plugins/$name/"
-      rsync -a --delete "$cache_src" "$BACKUP_DIR/plugins/$name/"
+      rsync -a --delete --exclude='.git' "$cache_src" "$REPO_DIR/plugins/$name/"
+      rsync -a --delete --exclude='.git' "$cache_src" "$BACKUP_DIR/plugins/$name/"
     fi
     # If all version dirs are empty, skip silently (stub plugin with no files)
   fi
