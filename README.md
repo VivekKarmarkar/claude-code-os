@@ -58,20 +58,21 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `swift-lsp` | swift-lsp |
 | `typescript-lsp` | typescript-lsp |
 
-## Hooks (3)
+## Hooks (4)
 
 | Hook | Description |
 |------|-------------|
 | `backup-skills.sh` | Hook: Backup skills and plugins after any file write to ~/.claude/skills/ or… |
 | `generate-readme.sh` | Generates README.md for the claude-skills repo from current skills and plugins |
+| `sync-mcp.sh` | Export MCP server configs (with secrets redacted) to the repo |
 | `sync-plugins.sh` | Hook: Detect new/changed plugins and sync to GitHub repo |
 
 ## MCP Servers (2)
 
 | Server | Command | Description |
 |--------|---------|-------------|
-| `memory` | `npx` | `npx -y @modelcontextprotocol/server-memory --memory-path /home/vivekkarmarkar/.claude/memory` |
-| `voicemode` | `uvx` | `uvx --refresh voice-mode` |
+| `memory` | `npx` | Persistent knowledge graph across conversations |
+| `voicemode` | `uvx` | Voice conversation with STT/TTS via ElevenLabs + Kokoro + OpenAI |
 
 ## Auto-Backup
 
