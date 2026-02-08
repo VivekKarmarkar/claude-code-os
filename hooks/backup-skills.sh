@@ -65,7 +65,9 @@ if [[ "$FILE_PATH" == *"/.claude/skills/"* ]] || [[ "$FILE_PATH" == *"/.claude/p
     git add -A
     if ! git diff --cached --quiet; then
       # Determine what type of thing changed for the commit message
-      if [[ "$FILE_PATH" == *"/.claude/hooks/"* ]]; then
+      if [[ "$FILE_PATH" == *"/.claude.json" ]]; then
+        CHANGE_TYPE="MCP config"
+      elif [[ "$FILE_PATH" == *"/.claude/hooks/"* ]]; then
         CHANGE_TYPE="hook"
       elif [[ "$FILE_PATH" == *"/.claude/plugins/"* ]]; then
         CHANGE_TYPE="plugin"
