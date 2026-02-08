@@ -18,21 +18,26 @@ TITLE=$(echo "$INPUT" | python3 -c "import sys,json; d=json.load(sys.stdin); pri
 URGENCY="normal"
 ICON="dialog-information"
 
+SOUND="/usr/share/sounds/freedesktop/stereo/complete.oga"
+
 case "$NOTIF_TYPE" in
   permission_prompt)
     ICON="dialog-password"
     URGENCY="critical"
     TITLE="Claude Code — Permission Needed"
+    SOUND="/usr/share/sounds/freedesktop/stereo/dialog-warning.oga"
     ;;
   idle_prompt)
     ICON="dialog-question"
     URGENCY="normal"
     TITLE="Claude Code — Waiting for Input"
+    SOUND="/usr/share/sounds/freedesktop/stereo/dialog-information.oga"
     ;;
   elicitation_dialog)
     ICON="dialog-question"
     URGENCY="normal"
     TITLE="Claude Code — Question"
+    SOUND="/usr/share/sounds/freedesktop/stereo/dialog-information.oga"
     ;;
 esac
 
@@ -42,6 +47,7 @@ if [ "$EVENT" = "Stop" ]; then
   URGENCY="normal"
   TITLE="Claude Code — Done"
   MESSAGE="Claude has finished responding"
+  SOUND="/usr/share/sounds/freedesktop/stereo/complete.oga"
 fi
 
 # Send the notification
