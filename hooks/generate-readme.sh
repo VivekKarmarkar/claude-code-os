@@ -90,7 +90,7 @@ hook_count=$(ls "$HOOKS_DIR"/*.sh 2>/dev/null | wc -l)
 cat > "$README" << 'HEADER'
 # Claude Code Skills & Plugins
 
-Backup of my [Claude Code](https://claude.ai/claude-code) skills and plugins. Auto-synced via a PostToolUse hook whenever a skill or plugin is added or edited.
+Backup of my [Claude Code](https://claude.ai/claude-code) skills, plugins, and hooks. Auto-synced whenever a skill, plugin, or hook is added or edited.
 
 HEADER
 
