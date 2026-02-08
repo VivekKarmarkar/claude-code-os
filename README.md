@@ -13,15 +13,15 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `manim-composer` | Trigger when: (1) User wants to create an educational/explainer video, (2) User… |
 | `manimgl-best-practices` | Trigger when: (1) User mentions "manimgl" or "ManimGL" or "3b1b manim", (2)… |
 | `medium` | Medium Article Writer |
-| `pdf` | Use this skill whenever the user wants to do anything with PDF files. This… |
+| `pdf` | Create, merge, split, fill, and manipulate PDF files |
 | `pptx` | Use this skill any time a .pptx file is involved in any way — as input, output,… |
-| `prism` | Prism LaTeX Writer |
+| `prism` | Write and compile LaTeX in OpenAI's Prism editor via browser automation |
 | `projectstatus` | Generate a project status report. Use when the user wants a status update,… |
 | `remember` | Commit important information to the persistent memory graph. Use when the user… |
 | `remotion-best-practices` | Best practices for Remotion - Video creation in React |
 | `roadmap` | Create a project roadmap document. Use when the user wants to plan milestones,… |
 | `summary` | Summarize the current chat session into a well-structured markdown file. Use… |
-| `swarm` | Swarm: Spin Up an Autonomous Agent Team |
+| `swarm` | Spin up autonomous agent teams with bypassed permissions |
 | `tweet` | Tweet: Draft and Post on X |
 | `warmup` | Start-of-session warmup that reads all existing project artifacts —… |
 

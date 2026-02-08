@@ -110,7 +110,12 @@ echo "|-------|-------------|" >> "$README"
 
 for dir in "$SKILLS_DIR"/*/; do
   name=$(basename "$dir")
-  desc=$(get_skill_description "$dir")
+  override=$(get_override "$name")
+  if [ -n "$override" ]; then
+    desc="$override"
+  else
+    desc=$(get_skill_description "$dir")
+  fi
   echo "| \`$name\` | $desc |" >> "$README"
 done
 
