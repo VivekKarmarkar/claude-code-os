@@ -30,6 +30,10 @@ if [[ "$FILE_PATH" == *"/.claude/skills/"* ]] || [[ "$FILE_PATH" == *"/.claude/p
     rsync -a --delete "$PLUGINS_SRC/" "$BACKUP_DIR/plugins/"
   fi
 
+  # 4. Backup hooks
+  mkdir -p "$BACKUP_DIR/hooks"
+  rsync -a --delete "$HOME/.claude/hooks/" "$BACKUP_DIR/hooks/"
+
   # Log the backup
   echo "$(date '+%Y-%m-%d %H:%M:%S') - Backed up skills+plugins after write to: $FILE_PATH" >> "$BACKUP_DIR/backup.log"
 
