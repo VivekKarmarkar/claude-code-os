@@ -4,6 +4,7 @@
 REPO_DIR="$HOME/claude-skills"
 SKILLS_DIR="$REPO_DIR/skills"
 PLUGINS_DIR="$REPO_DIR/plugins"
+HOOKS_DIR="$REPO_DIR/hooks"
 README="$REPO_DIR/README.md"
 
 truncate_desc() {
