@@ -38,38 +38,30 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `tweet` | Tweet: Draft and Post on X |
 | `warmup` | Start-of-session warmup that reads all existing project artifacts —… |
 
-## Plugins (28)
+## Plugins (20)
 
 | Plugin | Description |
 |--------|-------------|
-| `agent-sdk-dev` | Claude Agent SDK Development Plugin |
-| `clangd-lsp` | clangd-lsp |
-| `claude-code-setup` | Analyze codebases and recommend tailored Claude Code automations such as hooks,… |
 | `claude-md-management` | Tools to maintain and improve CLAUDE.md files - audit quality, capture session… |
 | `code-review` | Automated code review for pull requests using multiple specialized agents with… |
 | `code-simplifier` | Agent that simplifies and refines code for clarity, consistency, and… |
 | `commit-commands` | Streamline your git workflow with simple commands for committing, pushing, and… |
-| `csharp-lsp` | csharp-lsp |
-| `example-plugin` | A comprehensive example plugin demonstrating all Claude Code extension options… |
 | `explanatory-output-style` | Adds educational insights about implementation choices and codebase patterns… |
 | `feature-dev` | Comprehensive feature development workflow with specialized agents for codebase… |
 | `frontend-design` | Frontend design skill for UI/UX implementation |
-| `gopls-lsp` | gopls-lsp |
+| `github` | Official GitHub MCP server for repository management. Create issues, manage… |
 | `hookify` | Easily create hooks to prevent unwanted behaviors by analyzing conversation… |
-| `jdtls-lsp` | jdtls-lsp |
-| `kotlin-lsp` | Supported Extensions |
+| `huggingface-skills` | Agent Skills for AI/ML tasks including dataset creation, model training,… |
 | `learning-output-style` | Interactive learning mode that requests meaningful code contributions at… |
-| `lua-lsp` | lua-lsp |
-| `php-lsp` | php-lsp |
 | `playground` | Creates interactive HTML playgrounds — self-contained single-file explorers… |
-| `plugin-dev` | Plugin Development Toolkit |
+| `playwright` | Browser automation and end-to-end testing MCP server by Microsoft. Enables… |
 | `pr-review-toolkit` | Comprehensive PR review agents specializing in comments, tests, error handling,… |
-| `pyright-lsp` | pyright-lsp |
 | `ralph-loop` | Continuous self-referential AI loops for interactive iterative development,… |
-| `rust-analyzer-lsp` | rust-analyzer-lsp |
-| `security-guidance` | Security reminder hook that warns about potential security issues when editing… |
-| `swift-lsp` | swift-lsp |
+| `slack` | Slack workspace integration. Search messages, access channels, read threads,… |
+| `supabase` | Supabase MCP integration for database operations, authentication, storage, and… |
+| `superpowers` | Core skills library for Claude Code: TDD, debugging, collaboration patterns,… |
 | `typescript-lsp` | typescript-lsp |
+| `vercel` | Deploy applications to Vercel with deployment monitoring, log analysis, and… |
 
 ## Hooks (5)
 
