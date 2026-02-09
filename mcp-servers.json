@@ -7,8 +7,8 @@
       "voice-mode"
     ],
     "env": {
-      "VOICEMODE_TTS_BASE_URLS": "http://127.0.0.1:4000/v1,http://127.0.0.1:8880/v1,https://api.openai.com/v1",
-      "ELEVENLABS_API_KEY": "REDACTED"
+      "VOICEMODE_TTS_BASE_URLS": "https://api.openai.com/v1",
+      "VOICEMODE_STT_BASE_URLS": "https://api.openai.com/v1"
     }
   },
   "memory": {
