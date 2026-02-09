@@ -1,4 +1,51 @@
 {
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Write",
+      "Edit",
+      "WebFetch",
+      "WebSearch",
+      "mcp__claude-in-chrome__*",
+      "mcp__plugin_playwright_playwright__*",
+      "mcp__memory__*",
+      "mcp__voicemode__*",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(pytest *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(git stash *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx *)",
+      "Bash(node *)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(gh *)",
+      "Bash(docker ps *)",
+      "Bash(docker logs *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -f *)",
+      "Read(.env*)"
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "python3 ~/.claude/statusline.py"
