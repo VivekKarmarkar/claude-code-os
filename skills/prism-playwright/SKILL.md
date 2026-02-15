@@ -328,7 +328,6 @@ editor.revealLine(lineCount);
 | Issue | Workaround |
 |-------|-----------|
 | Monaco auto-indent in verbatim | Use Monaco API to set content directly (Option 1) |
-| Cannot operate file dialogs | Save .tex locally via Write tool; user views PDF in Prism |
 | Compile button location may shift | Always take snapshot first to find ref |
 | Long documents may need scrolling | Use Monaco API to navigate, or scroll with `browser_evaluate` |
 | Prism login required | User must be logged in to OpenAI account |
