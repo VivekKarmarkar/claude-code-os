@@ -262,16 +262,38 @@ If the user wants code verification:
 4. Wait 2-3 seconds for download to complete
 5. The PDF will be downloaded to `.playwright-mcp/main.pdf`
 
-### Step 8: Save Files Locally
+### Step 9: Save Files Locally
 
-1. Use `mcp__playwright__browser_evaluate` to extract the final LaTeX source:
-   ```javascript
-   window.monaco.editor.getEditors()[0].getModel().getValue()
+1. **Extract and save main.tex**:
+   - Click on `main.tex` in the file tree
+   - Use `mcp__playwright__browser_evaluate` to extract content:
+     ```javascript
+     window.monaco.editor.getEditors()[0].getModel().getValue()
+     ```
+   - Save to local location (e.g., `~/Python Files/give-claude-a-computer/LaTeX project/<topic-name>.tex`)
+
+2. **Extract and save references.bib** (if using professional BibLaTeX):
+   - Click on `references.bib` in the file tree
+   - Use `mcp__playwright__browser_evaluate` to extract content:
+     ```javascript
+     window.monaco.editor.getEditors()[0].getModel().getValue()
+     ```
+   - Save to same location (e.g., `~/Python Files/give-claude-a-computer/LaTeX project/references.bib`)
+
+3. **Handle PDF** (optional):
+   - Copy from `.playwright-mcp/main.pdf` to meaningful location if download succeeded
+   - Note: PDF download via Playwright MCP can be unreliable; PDF preview in Prism is sufficient proof of successful compilation
+
+4. **Verify files**:
+   ```bash
+   ls -lh "~/Python Files/give-claude-a-computer/LaTeX project/" | grep -E "<topic-name>|references.bib"
    ```
-2. Save the .tex file to a local location (e.g., `/tmp/<topic-name>.tex`)
-3. Copy the downloaded PDF from `.playwright-mcp/main.pdf` to a meaningful location (e.g., `/tmp/<topic-name>.pdf`)
-4. Verify both files with `ls -lh` and `file` commands
-5. Tell the user where both the `.tex` and `.pdf` files are saved
+
+5. **Report to user**:
+   - Location of .tex file(s)
+   - Location of .bib file (if applicable)
+   - PDF status (compiled successfully in Prism, viewable in browser)
+   - Compilation results (pages, citations rendered)
 
 ## Playwright-Specific Patterns
 
