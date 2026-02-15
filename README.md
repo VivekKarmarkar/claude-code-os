@@ -13,7 +13,7 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `githour` | Git Hour: Refactor, Init, Commit, Publish |
 | `gitinit` | Git Init: Initialize a Private Git Repo |
 | `gitpublic` | Git Public: Make a Private Repo Public |
-| `improve` | Improve: Autonomous Agent Improvement Game |
+| `improve` | Improve: Autonomous Agent Improvement Game
 | `litreview` | Literature Review: Research, Organize, Present |
 | `litwebpage` | Lit Webpage: Literature Review to Polished Webpage |
 | `makesong` | Make Song: Generate & Download Music with Suno |
