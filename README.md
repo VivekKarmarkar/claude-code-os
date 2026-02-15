@@ -2,7 +2,7 @@
 
 My personalized operating system for Claude Code — skills, plugins, and hooks that extend what Claude can do. Auto-synced whenever anything is added or edited.
 
-## Skills (40)
+## Skills (41)
 
 | Skill | Description |
 |-------|-------------|
@@ -32,6 +32,7 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `pdf` | Create, merge, split, fill, and manipulate PDF files |
 | `pptx` | Use this skill any time a .pptx file is involved in any way — as input, output,… |
 | `prism` | Write and compile LaTeX in OpenAI's Prism editor via browser automation |
+| `prism-playwright` | - |
 | `professorclaude` | Professor Claude: Teach a Concept with Interactive Material |
 | `projectstatus` | Generate a project status report. Use when the user wants a status update,… |
 | `refactor` | Refactor: Deep Codebase Cleanup |

@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "permissions": {
     "allow": [
       "Read",
@@ -46,13 +49,6 @@
       "Read(.env*)"
     ]
   },
-  "statusLine": {
-    "type": "command",
-    "command": "python3 ~/.claude/statusline.py"
-  },
-  "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
-  },
   "hooks": {
     "PostToolUse": [
       {
@@ -99,6 +95,10 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "python3 ~/.claude/statusline.py"
+  },
   "enabledPlugins": {
     "playground@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true,
@@ -120,5 +120,6 @@
     "learning-output-style@claude-plugins-official": true,
     "slack@claude-plugins-official": true,
     "huggingface-skills@claude-plugins-official": true
-  }
+  },
+  "model": "sonnet"
 }
