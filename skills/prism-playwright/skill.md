@@ -126,15 +126,28 @@ If the user wants code verification:
 4. Optionally, add the verification code as a `\begin{verbatim}` listing in the LaTeX document
 5. Recompile to include the code listing
 
-### Step 7: Extract Final Content
+### Step 7: Download the PDF
+
+**CRITICAL:** The final output MUST be a PDF file, not just .tex.
+
+1. Take a snapshot to locate the download button in the PDF preview toolbar
+2. Look for the download button (it's near the "Compile" button in the top toolbar)
+   - The button typically appears as a download icon (downward arrow)
+   - Use `browser_snapshot` to find the exact ref
+3. Click the download button using `mcp__playwright__browser_click`
+4. Wait 2-3 seconds for download to complete
+5. The PDF will be downloaded to `.playwright-mcp/main.pdf`
+
+### Step 8: Save Files Locally
 
 1. Use `mcp__playwright__browser_evaluate` to extract the final LaTeX source:
    ```javascript
    window.monaco.editor.getEditors()[0].getModel().getValue()
    ```
-2. Save it to a local file using the Write tool
-3. Tell the user where the `.tex` file is saved
-4. Note: The PDF is in Prism - user can view it there or download manually
+2. Save the .tex file to a local location (e.g., `/tmp/<topic-name>.tex`)
+3. Copy the downloaded PDF from `.playwright-mcp/main.pdf` to a meaningful location (e.g., `/tmp/<topic-name>.pdf`)
+4. Verify both files with `ls -lh` and `file` commands
+5. Tell the user where both the `.tex` and `.pdf` files are saved
 
 ## Playwright-Specific Patterns
 
