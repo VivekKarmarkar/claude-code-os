@@ -51,7 +51,24 @@ If Prism asks for login or shows an error, tell the user and stop.
 4. Wait for the Monaco editor to be ready (use `browser_wait_for` with time: 2)
 5. Take a snapshot to confirm the editor is loaded
 
-### Step 4: Write the LaTeX Document
+### Step 4: Create Bibliography File (if needed)
+
+**For professional documents with references, create the `.bib` file FIRST:**
+
+1. Click "Add file or folder" button in the file panel
+2. Select "Add File"
+3. Name it `references.bib`
+4. Use Monaco API to populate with professional BibTeX entries:
+   ```javascript
+   const editor = window.monaco?.editor?.getEditors?.()?.[0];
+   if (!editor) throw new Error('Monaco editor not found');
+   editor.getModel().setValue(`@book{key1,...}\n@article{key2,...}`);
+   ```
+5. Click on `main.tex` in the file tree to switch back to the main document
+
+**Skip this step** if using simple embedded bibliography (`\begin{thebibliography}`).
+
+### Step 5: Write the LaTeX Document
 
 Write the document in the Monaco editor using Playwright tools. Follow these guidelines:
 
