@@ -1,4 +1,14 @@
 {
+  "gws": {
+    "type": "stdio",
+    "command": "gws",
+    "args": [
+      "mcp",
+      "--services",
+      "all"
+    ],
+    "env": {}
+  },
   "memory": {
     "type": "stdio",
     "command": "npx",
