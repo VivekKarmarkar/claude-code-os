@@ -2,18 +2,20 @@
 
 My personalized operating system for Claude Code — skills, plugins, and hooks that extend what Claude can do. Auto-synced whenever anything is added or edited.
 
-## Skills (41)
+## Skills (46)
 
 | Skill | Description |
 |-------|-------------|
 | `architectural-walkthrough-video` | Architectural Walkthrough Video: From System Design to Polished Video |
 | `compval` | CompVal: Computational Validation of Mathematical Results |
 | `cooldown` | End-of-session cooldown that generates all project artifacts in sequence —… |
+| `cost-estimate` | Estimate development cost of a codebase based on lines of code and complexity |
+| `find-skills` | Discover and install agent skills from the skills.sh marketplace |
 | `gitcommit` | Git Commit: Commit and Push |
 | `githour` | Git Hour: Refactor, Init, Commit, Publish |
 | `gitinit` | Git Init: Initialize a Private Git Repo |
 | `gitpublic` | Git Public: Make a Private Repo Public |
-| `improve` | Improve: Autonomous Agent Improvement Game
+| `improve` | Improve: Autonomous Agent Improvement Game |
 | `litreview` | Literature Review: Research, Organize, Present |
 | `litwebpage` | Lit Webpage: Literature Review to Polished Webpage |
 | `makesong` | Make Song: Generate & Download Music with Suno |
@@ -40,13 +42,16 @@ My personalized operating system for Claude Code — skills, plugins, and hooks 
 | `remotion-best-practices` | Best practices for Remotion - Video creation in React |
 | `review` | Spaced Repetition Review: `/review` |
 | `roadmap` | Create a project roadmap document. Use when the user wants to plan milestones,… |
+| `skill-creator` | Create new skills, modify and improve existing skills, and measure performance |
 | `summary` | Summarize the current chat session into a well-structured markdown file. Use… |
 | `swarm` | Spin up autonomous agent teams with bypassed permissions |
 | `synthesize` | Synthesize: Smart Router for Merging Multiple Files |
 | `synthesizepdf` | Synthesize PDF: Merge Multiple PDFs into One Coherent Document |
 | `synthesizeppt` | Synthesize PPT: Merge Multiple Decks into One Coherent Presentation |
 | `tweet` | Tweet: Draft and Post on X |
+| `vercel-react-best-practices` | React and Next.js performance optimization guidelines from Vercel Engineering |
 | `warmup` | Start-of-session warmup that reads all existing project artifacts —… |
+| `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance |
 
 ## Plugins (28)
 
