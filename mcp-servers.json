@@ -36,6 +36,15 @@
       "VOICEMODE_AUTO_START_KOKORO": "false"
     }
   },
+  "codex-cli": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "codex-mcp-server"
+    ],
+    "env": {}
+  },
   "claude-in-chrome": {
     "type": "chrome-extension",
     "command": "chrome-extension",
